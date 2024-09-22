@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-  int A, B, C, D, E, F, G;
-  scanf("%d %d %d %d %d %d %d", &A, &B, &C, &D, &E, &F, &G);
+  double A, B, C, D, E, F, G;
+  scanf("%lf %lf %lf %lf %lf %lf %lf", &A, &B, &C, &D, &E, &F, &G);
 
   if (A == B || A == C || A == D || A == E || A == F || B == C || B == D ||
       B == E || B == F || B == G || C == D || C == E || C == F || C == G ||
@@ -11,7 +11,7 @@ int main() {
     return 0;
   }
 
-  int temporaryNumber;
+  double temporaryNumber;
 
   if (A > B) {
     temporaryNumber = B;
@@ -130,18 +130,25 @@ int main() {
   }
   // F dan G otomatis menjadi ke-2 dan ke-1 terbesar
 
-  printf("Peringkat 1 memiliki kekuatan sebesar %d, AJAK DIA BERPETUALANG.\n",
-         G);
-  printf("Peringkat 2 memiliki kekuatan sebesar %d, AJAK DIA BERPETUALANG.\n",
-         F);
-  printf("Peringkat 3 memiliki kekuatan sebesar %d, AJAK DIA BERPETUALANG.\n",
-         E);
-  printf("Peringkat 4 memiliki kekuatan sebesar %d, YAH KEKUATANMU KURENG.\n",
-         D);
-  printf("Peringkat 5 memiliki kekuatan sebesar %d, YAH KEKUATANMU KURENG.\n",
-         C);
-  printf("Peringkat 6 memiliki kekuatan sebesar %d, YAH KEKUATANMU KURENG.\n",
-         B);
-  printf("Peringkat 7 memiliki kekuatan sebesar %d, YAH KEKUATANMU KURENG.\n",
-         A);
+  printf(
+      "Peringkat 1 memiliki kekuatan sebesar %0.lf, AJAK DIA BERPETUALANG.\n",
+      G);
+  printf(
+      "Peringkat 2 memiliki kekuatan sebesar %0.lf, AJAK DIA BERPETUALANG.\n",
+      F);
+  printf(
+      "Peringkat 3 memiliki kekuatan sebesar %0.lf, AJAK DIA BERPETUALANG.\n",
+      E);
+  printf(
+      "Peringkat 4 memiliki kekuatan sebesar %0.lf, YAH KEKUATANMU KURENG.\n",
+      D);
+  printf(
+      "Peringkat 5 memiliki kekuatan sebesar %0.lf, YAH KEKUATANMU KURENG.\n",
+      C);
+  printf(
+      "Peringkat 6 memiliki kekuatan sebesar %0.lf, YAH KEKUATANMU KURENG.\n",
+      B);
+  printf(
+      "Peringkat 7 memiliki kekuatan sebesar %0.lf, YAH KEKUATANMU KURENG.\n",
+      A);
 }
