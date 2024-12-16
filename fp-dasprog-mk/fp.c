@@ -633,7 +633,7 @@ void updateIPS(Mahasiswa *mhs, int smt) {
     if (pil < 1 || pil > 8) {
       printf("Input tidak valid\n");
     } else {
-      printf("Input IPS Semester %d", pil);
+      printf("Input IPS Semester %d ", pil);
       scanf(" %f", &mhs->ipsSemester[pil - 1].ips);
     }
 
@@ -684,6 +684,8 @@ void modifyData(Mahasiswa *mhs, int iAwal) {
 
       token = strtok(NULL, " ,");
     }
+
+    readSpecificData(&mhs[iAwal]);
 
     char yakin;
     printf("Sudah yakin? (y/n) ");
