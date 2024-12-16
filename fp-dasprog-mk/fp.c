@@ -626,6 +626,10 @@ void updateIPS(Mahasiswa *mhs, int smt) {
     return;
   }
 
+  for (int i = smt - 1; i < 8; i++) {
+    mhs->ipsSemester[i].ips = 0.0;
+  }
+
   char *token = strtok(smtPil, ",");
   while (token != NULL) {
     int pil = *token - '0';
